@@ -25,8 +25,10 @@ router.post("/", async (req, res) => {
       profesion,
       deleted
     });
+    console.log(resultado);
     res.status(200).json(resultado)
   } catch (error) {
+    console.log(error);
     res.status(400).json({ error: error.message });
   }
 });

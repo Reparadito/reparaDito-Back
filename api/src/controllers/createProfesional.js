@@ -54,10 +54,11 @@ async function createProfesional({
       profesion,
       deleted,
     });
+    console.log("Controller--->",resultado);
     return resultado;
   } catch (error) {
-    //console.log(error.parent.detail)
-    throw new Error(error.parent.detail);
+    console.log(error)
+    // throw new Error(error.parent.detail);
   }
 }
 

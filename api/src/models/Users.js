@@ -7,7 +7,6 @@ module.exports = (sequelize) => {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
-        autoIncrement: false // desabilita la auto-incrementacion
       },
       
       user: {
