@@ -58,13 +58,24 @@ async function login(user, password) {
       }),
       ...(videogameDb && {
         id: videogameDb.id,
-        name: videogameDb.name,
-        stock: videogameDb.stock,
-        genre: videogameDb.genre,
-        description: videogameDb.description,
-        releaseDate: videogameDb.releaseDate,
+        user: videogameDb.name,
+        password: videogameDb.stock,
+        fullname: videogameDb.genre,
+        userAdmin: videogameDb.deleted,
+        email: videogameDb.description,
+        date: videogameDb.releaseDate,
         image: videogameDb.image,
       }),
+      //--------->>No se debe enviar esta data al localStore
+      // ...(videogameDb && {
+      //   id: videogameDb.id,
+      //   name: videogameDb.name,
+      //   stock: videogameDb.stock,
+      //   genre: videogameDb.genre,
+      //   description: videogameDb.description,
+      //   releaseDate: videogameDb.releaseDate,
+      //   image: videogameDb.image,
+      // }),
     };
 
 
